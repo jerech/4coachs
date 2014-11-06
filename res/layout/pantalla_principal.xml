@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.coachs.PantallaPrincipal" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="205dp"
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView 
+                android:id="@+id/txtNombreEquipo"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:textSize="33sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/negro"
+                android:background="@color/gris"
+                android:text="@string/strNombreEquipo"/>
+            <TextView 
+                android:id="@+id/txtNombreDivision"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/negro"
+                android:background="@color/gris"
+                android:text="@string/strNombreDivision"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end|center_vertical">
+
+            <ImageView
+                android:id="@+id/imgEscudoEquipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_escudo" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="447dp"
+        android:orientation="vertical" >
+        
+        <Button 
+            android:id="@+id/btnPlantel"
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:text="PLANTEL"
+            android:layout_gravity="start"
+            android:textStyle="bold|italic"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="33dp"
+            android:background="@drawable/selector_btn_principal"/>
+        <Button 
+            android:id="@+id/btnEntrenamiento"
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:text="ENTRENAMIENTO"
+            android:textColor="@color/gris_oscuro"
+            android:layout_gravity="start"
+            android:textStyle="bold|italic"
+            android:textSize="33dp"
+            android:background="@drawable/botones"/>
+        <Button 
+            android:id="@+id/btnCalendario"
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:textColor="@color/gris_oscuro"
+            android:text="CALENDARIO"
+            android:layout_gravity="start"
+            android:textStyle="bold|italic"
+            android:textSize="33dp"
+            android:background="@drawable/botones"/>
+        <Button 
+            android:id="@+id/btnPartido"
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:text="PARTIDO"
+            android:textColor="@color/gris_oscuro"
+            android:layout_gravity="start"
+            android:textStyle="bold|italic"
+            android:textSize="33dp"
+            android:background="@drawable/botones"/>
+        <Button 
+            android:id="@+id/btnEstadisticas"
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:textColor="@color/gris_oscuro"
+            android:text="ESTADISTICAS"
+            android:layout_gravity="start"
+            android:textStyle="bold|italic"
+            android:textSize="33dp"
+            android:background="@drawable/botones"/>
+    </LinearLayout>
+		
+</LinearLayout>
